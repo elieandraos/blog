@@ -40,6 +40,28 @@ class RegisterController extends Controller
     }
 
     /**
+     * method called upon making a GET request on /register
+     * @return type
+     */
+    public function showRegistrationForm()
+    {
+        abort(404);
+    }
+
+    /**
+     * method called upon making a POST to /register 
+     * Prevents a POST via postman or any tool.
+     * 
+     * @return type
+     */
+    public function register()
+    {
+        abort(404);
+    }
+
+
+
+    /**
      * Get a validator for an incoming registration request.
      *
      * @param  array  $data
